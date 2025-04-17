@@ -8,7 +8,7 @@ export function GetName(){
     const adjectivesLength = adjectivesList.length;
     const nounsLength = nounsList.length;
 
-    const adjective = adjectivesLength[Math.floor(Math.random() * (adjectivesLength+1))];
-    const noun = nounsLength[Math.floor(Math.random() * (nounsLength+1))];
+    const adjective = adjectivesList[Math.floor(Math.random() * (adjectivesLength+1))];
+    const noun = nounsList[Math.floor(Math.random() * (nounsLength+1))];
     return `${adjective}-${noun}`;
 }
